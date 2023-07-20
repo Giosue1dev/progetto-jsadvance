@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image {
+  height: 40vh;
+  width: 80%;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+input {
+  margin-top: 50px;
+  width: 380px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+p {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.textScore,
+.score {
+  background-color: lightgrey;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.category {
+  width: 300px;
+}
+
+.summary {
+  width: 90%;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+  background-color: lightblue;
+  font-weight: bolder;
+  border-radius: 8px;
+}
