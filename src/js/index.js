@@ -16,7 +16,6 @@ let city;
 let clearCard = function () {
   category.innerHTML = "";
   photo.style.backgroundImage = "";
-  textScore.innerHTML = "";
   score.innerHTML = "";
 };
 
@@ -49,8 +48,7 @@ const getData = async function () {
   if (getScore.status != 404) {
     summary.innerHTML = `<h2><p>${dataScore.summary}</p><h2>`;
     category.innerHTML = "";
-    textScore.innerHTML = "CITY SCORE";
-    score.innerHTML = dataScore.teleport_city_score.toFixed(2);
+    score.innerHTML = "City Score"+ dataScore.teleport_city_score.toFixed(2);
     dataScore.categories.forEach((x) => {
       category.insertAdjacentHTML(
         "afterbegin",

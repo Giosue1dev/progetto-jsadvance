@@ -263,7 +263,7 @@
         };
       },
       844: (e, n, t) => {
-        e.exports = t.p + "../src/IMG/city.png";
+        e.exports = t.p + "../src/img/desktop-1920x1080.jpg";
       },
     },
     n = {};
@@ -364,8 +364,7 @@
           404 != e.status
             ? ((m.innerHTML = `<h2><p>${n.summary}</p><h2>`),
               (v.innerHTML = ""),
-              (x.innerHTML = "CITY SCORE"),
-              (y.innerHTML = n.teleport_city_score.toFixed(2)),
+              (y.innerHTML = "City score: "+n.teleport_city_score.toFixed(2)),
               n.categories.forEach((e) => {
                 v.insertAdjacentHTML(
                   "afterbegin",

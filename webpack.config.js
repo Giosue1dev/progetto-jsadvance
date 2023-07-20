@@ -22,8 +22,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Teleport City",
       filename: "index.html",
-      template: "src/templete.html",
-      favicon: "./src/IMG/favicon.png",
     }),
   ],
 };
