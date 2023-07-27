@@ -14,7 +14,7 @@
           l = s()(u);
         p.push([
           e.id,
-          `body {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  background-image: url(${l});\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\n.image {\n  height: 40vh;\n  width: 80%;\n  object-fit: fill;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  align-items: center;\n  border-radius: 10px;\n}\n\np {\n  text-align: center;\n}\n\ninput {\n  margin-top: 50px;\n  width: 380px;\n  height: 60px;\n  font-size: 30px;\n  text-align: center;\n  border-radius: 10px;\n}\n\np {\n  background-color: lightgrey;\n  border-radius: 10px;\n}\n\n.textScore,\n.score {\n  background-color: lightgrey;\n  width: 200px;\n  text-align: center;\n  border-radius: 10px;\n}\n\n.category {\n  width: 300px;\n}\n\n.summary {\n  width: 90%;\n}\n\nbutton {\n  width: 100px;\n  height: 35px;\n  margin-top: 20px;\n  background-color: lightblue;\n  font-weight: bolder;\n  border-radius: 8px;\n}\n`,
+          `body {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  background-image: url(${l});\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\n.image {\n  height: 60%;\n  width: 80%;\n  object-fit: fill;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  align-items: center;\n  border-radius: 10px;\n}\n\np {\n  text-align: center;\n}\\ninput {\n  margin-top: 50px;\n  width: 380px;\n  height: 60px;\n  font-size: 30px;\n  text-align: center;\n  border-radius: 10px;\n}\n\np {\n  background-color: lightgrey;\n  border-radius: 10px;\n}\n\n.textScore,\n.score {\n  background-color: lightgrey;\n  width: 200px;\n  text-align: center;\n  border-radius: 10px;\n}\n\n.category {\n  width: 76%;\n }\n\n.summary {\n  width: 90%;\n}\n\nbutton {\n  width: 100px;\n  height: 35px;\n  margin-top: 20px;\n  background-color: lightblue;\n  font-weight: bolder;\n  border-radius: 8px;\n}\n`,
           "",
         ]);
         const d = p;
@@ -263,7 +263,7 @@
         };
       },
       844: (e, n, t) => {
-        e.exports = t.p + "../src/img/desktop-1920x1080.jpg";
+        e.exports = t.p + "../src/img/8753.jpg";
       },
     },
     n = {};
@@ -368,8 +368,8 @@
               n.categories.forEach((e) => {
                 v.insertAdjacentHTML(
                   "afterbegin",
-                  `<h3>${e.name}<br> ${e.score_out_of_10.toFixed(1)}<br><h3>`
-                );
+                  `<table><tr><td><h3>${e.name}: <td><h4>${e.score_out_of_10.toFixed(1)}<br><h3></tr></table>`
+                  );
               }),
               (g.style.backgroundImage = `url(${r.photos[0].image.web})`),
               (b.value = ""))
