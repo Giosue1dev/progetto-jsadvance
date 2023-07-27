@@ -263,7 +263,7 @@
         };
       },
       844: (e, n, t) => {
-        e.exports = t.p + "../src/img/8753.jpg";
+        e.exports = t.p + "../img/8753.jpg";
       },
     },
     n = {};
